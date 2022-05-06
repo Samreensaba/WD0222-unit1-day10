@@ -178,7 +178,12 @@ console.log(isThisAnEmail("samren_saba@yahoo.com"))
 Write a function called whatDayIsIt that should return the current day of the week.
 
 */
-
+let whatDayIsIt = function(){
+    today = new Date();
+    let d = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    console.log(d)
+}
+whatDayIsIt()
 /* EXERCISE 8
 
 Write a function called rollTheDices which receives a number as a parameter.
@@ -320,7 +325,26 @@ tree(3)
 Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 
 */
-
+console.log("\nExercise 23:\n")
+function isItPrime(num) {
+    if (num===2){
+        return true
+    }
+    else if(num >1){
+        for(let i = 2; i < num; i++){
+            if(num % i === 0){ 
+                return true
+            }
+        else if (num === i * i) {
+            return false
+          } else {
+            return false
+          }
+        }
+    }
+    
+}    
+isItPrime(6)
 /* WHEN YOU ARE FINISHED
 
 Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today’s Eduflow.
