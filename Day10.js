@@ -168,7 +168,7 @@ Write a function called isThisAnEmail which receives a string as a parameter and
 */
 console.log("\nExcercise 5:\n")
 let isThisAnEmail = function(email){
-    let valid = /\S+@\S+\.\S+/;
+    let valid = abcd@MediaSession.cosjf;
     return valid.test(email);
 }
 console.log(isThisAnEmail("samren_saba@yahoo.com"))
